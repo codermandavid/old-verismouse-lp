@@ -1,0 +1,1914 @@
+/*--------------
+All Contents
+--------------*/
+
+/*-----------------
+1. Reset.css
+2. Helper Classes
+3. Main and Hero Section Stylings
+4. Services Styling
+5. Features Split
+6. Feature with BG
+7. Feature Big
+8. Testimonial Styling
+9. Pricing Section
+10. Call To Action Subscribe
+11. Contact Section
+12. Footer
+13. Back to top
+------------------*/
+
+
+/*----- 1. Reset.css -----*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* --- Common Styles ---*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Nunito';
+  font-size: 16px;
+}
+
+p {
+	font-family: 'Open Sans';
+	font-size: 14px;
+}
+
+/*----- Helper Classes -----*/
+
+html * {
+	text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*
+::-webkit-scrollbar {
+	display: none;
+}
+*/
+
+::-moz-selection {
+    color: #1106CC;
+    background: #FFFFFF;
+}
+
+::selection {
+    color: #1106CC;
+    background: #FFFFFF;
+}
+
+.nopadding {
+	padding: 0;
+}
+
+.custom-padding {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.no-margin {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+#loading {
+   width: 100%;
+   height: 100%;
+   top: 0px;
+   left: 0px;
+   position: fixed;
+   opacity: 1;
+   background-color: #F2F2F2;
+   z-index: 9999;
+   text-align: center;
+}
+
+#loading-image {
+	display: inline;
+    top: 40%;
+    position: relative;
+  z-index: 9999;
+}
+
+
+.logo {
+	position: absolute;
+	left: 2%;
+	top: 2%;
+	z-index: 11;
+}
+
+/* ------ Navbar Styling Starts ----- */
+
+
+.navbar {
+	font-size: 14px;
+  font-family: 'Nunito';
+	font-weight: 500;
+	text-transform: uppercase;
+	padding-top: 25px;
+	letter-spacing: 1px;
+	height: 80px;
+}
+
+.navbar-default {
+  transition: all 0.6s ease;
+	border-color: transparent;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+  border-radius: 0px;
+  border-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #666666;
+}
+
+.navbar-default .navbar-brand .navbar-toggle .collapsed {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #111111;
+  }
+
+.navbar-default .navbar-brand {
+	font-family: 'Nunito';
+	font-size: 21px;
+	font-weight: 700;
+	color: #41CD52;
+	letter-spacing: 0;
+	line-height: 1;
+	text-transform: none;
+	padding: 15px;
+	-webkit-transition: 200ms;
+	-moz-transition: 200ms;
+	-o-transition: 200ms;
+	transition: 200ms;
+}
+
+
+.navbar-default .navbar-brand:hover {
+	color: #111111;
+  transition: 1s;
+}
+
+
+.navbar-default .navbar-nav > li > a {
+	font-family: 'Nunito';
+	font-size: 15px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #b3b3b3;
+  -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5;
+  transition: all 0.5s;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #41CD52;
+}
+
+.navbar-default .navbar-nav > .active > a {
+  background: transparent;
+  color: #41CD52;
+  }
+
+
+.navbar-default .navbar-nav > .active > a:hover {
+    background: transparent;
+    color: #41CD52;
+}
+
+.navbar-default .navbar-nav > .active > a:focus {
+	background: transparent;
+  color: #41CD52;
+}
+
+.navbar-default .navbar-collapse {
+	border-color: transparent;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav .open .dropdown-toggle {
+  color: #111111;
+}
+
+.navbar-default .nav-white > li > a {
+	color: #FFFFFF;
+}
+
+.navbar-default .nav-white > li > a:hover {
+	color: #EFEFEF;
+}
+
+.navbar-default .nav-white {
+	color: #FFFFFF;
+}
+
+.navbar .btn-nav {
+  background: #41CD52;
+  color: #FFFFFF;
+  border-radius: 0.7rem;
+	box-shadow: 0 3px 10px rgba(65,205,82,.5);
+  padding: 0.5rem 1.5rem;
+  margin-left: 1.5rem !important;
+  margin-top: 0.4rem;
+  transition: all .3s ease-in-out;
+}
+
+.navbar .btn-nav span {
+  font-family: 'Nunito';
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+
+.navbar .btn-nav:hover {
+  background: #41CD52 !important;
+  color: #FFFFFF;
+  border-color: #41CD52 !important;
+	box-shadow: 0 5px 10px rgba(65,205,82,.5);
+}
+
+
+/*---------- Media Queries ---------*/
+
+@media only screen and (max-width: 767px) {
+
+	.navbar {
+		padding-top: 5px;
+		height: 60px;
+	}
+
+  .navbar-default {
+    border: 0px;
+    background-color: transparent;
+  }
+
+	.navbar-default .navbar-collapse {
+		text-align: center;
+		border-color: transparent;
+	  background-color: #FFFFFF;
+	}
+
+  .navbar-default .navbar-collapse {
+    border: 0;
+    border-color: transparent;
+  }
+
+
+  .navbar-default .navbar-nav > li> a {
+    color: #111111;
+		margin-top: 10px;
+  }
+
+	.navbar-default .navbar-nav > li> a:hover {
+		color: #222222;
+	}
+
+  .navbar-default .navbar-brand {
+    color: #41CD52;
+		padding: 15px 15px !important;
+  }
+
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #41CD52;
+  }
+
+	.navbar .btn-nav {
+	  margin-left: 0 !important;
+	}
+}
+
+@media only screen and (min-width: 240px) {
+
+.navbar.past-main {
+  transition: all 0.6s ease;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.99);
+}
+
+.navbar.effect-main:active {
+  -webkit-transition: height 0.6s; /* For Safari 3.1 to 6.0 */
+  transition: height 0.6s;
+  height: 60px;
+}
+
+.navbar.past-main {
+	font-size: 14px;
+	padding-top: 5px;
+	height: 60px;
+	-webkit-box-shadow: 0 1px 5px 0 rgba(96, 96, 96, 0.3);
+	-moz-box-shadow: 0 1px 5px 0 rgba(96, 96, 96, 0.3);
+	box-shadow: 0 1px 5px 0 rgba(96, 96, 96, 0.3);
+	-webkit-transition: 0.5s all ease; /* For Safari 3.1 to 6.0 */
+	transition: 0.5s all ease;
+}
+
+.navbar-default.past-main .navbar-brand {
+	color: #41CD52;
+	padding: 15px;
+}
+
+.navbar-default.past-main .navbar-toggle .icon-bar {
+	background-color: #41CD52;
+}
+
+.navbar-default.past-main .navbar-nav > li > a {
+  color: #606060;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.navbar-default.past-main .navbar-nav > li > a:hover {
+  color: #41CD52;
+}
+
+.navbar-default.past-main .navbar-nav > .active > a {
+  background: transparent;
+  color: #41CD52;
+  }
+
+
+.navbar-default.past-main .navbar-nav > .active > a:hover {
+    background: transparent;
+    color: #41CD52;
+}
+
+.navbar-default.past-main .navbar-nav > .active > a:focus {
+	background: transparent;
+  color: #41CD52;
+}
+
+.navbar-default.past-main .btn-nav {
+	visibility: visible !important;
+}
+
+.nav-alt.past-main .navbar-nav .btn-edge {
+	color: #FFFFFF;
+}
+
+.nav-alt.past-main .navbar-nav .btn-edge:hover {
+	color: #FFFFFF;
+}
+
+}
+
+
+/* ------------- Navbar Alt Styling --------------*/
+
+
+.nav-alt .navbar-nav > li > a {
+	font-family: 'Josefin Sans';
+	font-size: 16px;
+	color: #444444;
+	text-transform: capitalize;
+}
+
+.nav-alt .navbar-nav > li > a:hover {
+	color: #111111;
+}
+
+
+.nav-alt .navbar-nav .btn-edge {
+	margin: 8px 0 0 0;
+	padding: 6px 15px;
+	border-radius: 3px;
+	background: #624dd6;
+	border-color: #624dd6;
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
+.nav-alt .navbar-nav .btn-edge:hover {
+	background: #624dd6;
+	color: #FFFFFF;
+}
+
+.nav-alt .navbar-nav .btn-edge:focus {
+	background: #624dd6;
+	color: #FFFFFF !important;
+}
+
+
+/*---------------------------------------------------------------------
+---------------- All Hero Sections Styling Starts Here ----------------
+---------------------------------------------------------------------*/
+
+
+.hero {
+	padding: 100px 0 50px 0;
+	/*background: linear-gradient(to right bottom,#3b1f5d,#633c84,#a25fa7,#b672ba);
+	background: #7B4EFF;
+	*/background: url(../images/1.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.hero img {
+	max-width: 100%;
+}
+
+.hero .intro {
+	padding: 75px 0 75px 0;
+}
+
+.hero .intro h1 {
+	font-family: 'Nunito';
+	font-size: 42px;
+	font-weight: 400;
+	line-height: 1.1;
+	letter-spacing: 0;
+	color: #09102B;
+}
+
+.hero .intro h1 span {
+	font-size: 42px;
+	font-weight: 400;
+  letter-spacing: -1px;
+	color: #41CD52;
+}
+
+.hero .intro p {
+	font-family: 'Nunito';
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.4;
+	letter-spacing: 1px;
+	color: #53586B;
+	max-width: 700px;
+	margin: 0 auto;
+	margin-top: 25px;
+
+}
+
+.hero .form-footer p {
+	font-family: 'Nunito';
+	color: #5d6A7B;
+	font-size: 14px;
+	letter-spacing: 1px;
+	margin-top: 10px;
+}
+
+
+.hero-2 {
+	padding: 150px 0 50px 0;
+	background: #FFFFFF;
+}
+
+.hero-2 .intro {
+	padding: 0 0 0 0;
+}
+
+.hero-2 .intro h1 {
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 1.1;
+	color: #333333;
+}
+
+.hero-2 .intro p {
+	font-size: 14px;
+	font-family: 'Nunito';
+	line-height: 1.4;
+	color: #848484;
+	max-width: 400px;
+	margin-top: 20px;
+}
+
+.hero-2 img {
+	margin-top: 30px;
+}
+
+.btn-action {
+  padding: 0.5rem 1.5rem;
+	background: #41CD52;
+	border: 1px solid;
+	border-color: #41CD52;
+  border-radius: .125rem;
+	box-shadow: 0 10px 30px rgba(65,205,82,.5);
+	margin: 24px 12px 0 0;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	transition: 0.2s;
+}
+
+.btn-action:hover {
+	color: #FFFFFF;
+	border-color: #41CD52;
+	background: #41CD52;
+	-webkit-transform: translateY(-2px);
+	-moz-transform: translateY(-2px);
+	transform: translateY(-2px);
+}
+
+.intro .btn-action {
+	background: #41CD52;
+}
+
+.intro .btn-action:hover {
+	background: #41CD52;
+}
+
+.btn-action span {
+	font-family: 'Nunito';
+	font-size: 12px;
+  font-weight: 700;
+  text-transform: capitalize;
+	letter-spacing: 1px;
+	color: #FFFFFF;
+	display: inline;
+}
+
+
+.intro .btn-action span {
+	font-family: 'Nunito';
+	font-size: 14px;
+  font-weight: 700;
+  text-transform: capitalize;
+	letter-spacing: 0.5px;
+	color: #FFF;
+	display: inline;
+}
+
+.intro .btn-action i {
+	color: #FFF;
+	font-size: 18px;
+	line-height: 1.4;
+	margin: 0 12px 0 6px;
+}
+
+.btn-action:hover span {
+	color: #FFFFFF;
+}
+
+.intro .btn-action:hover span {
+	color: #FFFFFF;
+}
+
+.intro .btn-action:hover i {
+	color: #FFFFFF;
+}
+
+
+
+
+/* ----- Features Section Styling Starts ----- */
+
+
+.flex-split {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+
+.flex-split .f-left {
+	flex: 1 0 50%;
+	background: #F9F9F9;
+}
+
+.flex-split .f-right {
+	flex: 1 0 50%;
+	background: linear-gradient(to right, rgba(47, 204, 115, 0), rgba(47, 204, 115, 0.9)), url(../images/ios11.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.flex-split .f-right img {
+	margin-top: 0;
+}
+
+.flex-split .f-left  {
+	padding: 30px;
+}
+
+.flex-split .f-left  h2 {
+	font-family: 'Nunito';
+	font-size: 28px;
+	color: #454545;
+	font-weight: 600;
+	line-height: 1.3;
+	margin-top: 40px;
+}
+
+.flex-split .f-left  p {
+	font-family: 'Nunito';
+	font-size: 14px;
+	color: #111111;
+	font-weight: 300;
+	line-height: 1.3;
+	letter-spacing: 1px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.flex-split .btn-action {
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+
+.flex-split .video-icon {
+	position: absolute;
+	top: 45%;
+	left:50%;
+	right:0;
+	outline: none;
+}
+
+.flex-split .video-icon i {
+	display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+	padding-left: 7px;
+  text-decoration: none;
+  text-align: center;
+  color: #41CD52;
+	background: #FFFFFF;
+  font-size: 34px;
+  font-weight: normal;
+  line-height: 1.55em;
+  -webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius: 50%;
+	box-shadow:0 5px 10px rgba(0, 0, 0, .15);
+}
+
+
+.main-2 .flex-split .f-right {
+	flex: 1 0 50%;
+	background: url(../images/half_bg.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.main-2 .flex-split .video-icon i {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+
+/*-----------------------------------------------------------
+------------ App Features Styling Starts ---------------
+-----------------------------------------------------------*/
+
+.pi-points {
+	background: #FFFFFF;
+	padding: 100px 0 100px 0;
+}
+
+.points-intro {
+	padding: 0 0 50px 0;
+}
+
+.points-intro h1 {
+	font-family: 'Nunito';
+	font-size: 28px;
+	font-weight: 300;
+	line-height: 1.2;
+}
+
+.point-icon {
+	padding: 20px 0 5px 0;
+}
+
+.point-text {
+	padding: 15px;
+}
+
+.point-text h1 {
+	font-family: 'Nunito';
+	font-size: 21px;
+}
+
+.point-text p {
+	font-family: 'Nunito';
+	font-size: 14px;
+	color: #A1A1A1;
+	line-height: 1.4;
+	margin-top: 15px;
+}
+
+
+/*-----------------------------------------------------------------
+--------------- Features Boxed Section Stying Starts --------------
+-----------------------------------------------------------------*/
+
+.features-boxed {
+	padding: 50px 0 100px 0;
+	background: #F3F3F3;
+}
+
+.features-boxed .boxed-intro {
+	padding: 50px 0 50px 15px;
+	overflow: hidden;
+}
+
+.features-boxed .boxed-intro h4 {
+	font-family: 'Roboto';
+	font-size: 16px;
+	font-weight: 400;
+	color: #848484;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+
+.features-boxed .boxed-intro h1 {
+	font-family: 'Roboto';
+	font-size: 36px;
+	font-weight: 300;
+	color: #404040;
+}
+
+.features-boxed .boxed-intro p {
+	font-family: 'Roboto';
+	font-size: 16px;
+	font-weight: 300;
+	color: #848484;
+	line-height: 1.4;
+	margin: 20px 0 20px 0;
+}
+
+.features-boxed .box-inner {
+	padding: 30px 30px 30px 30px;
+	margin-bottom: 30px;
+	background: #FFFFFF;
+	min-height: 300px;
+	border-radius: 2px;
+	-webkit-transition: box-shadow .3s ease-in-out;
+	-moz-transition:box-shadow .3s ease-in-out;
+	-ms-transition:box-shadow .3s ease-in-out;
+	-o-transition:box-shadow .3s ease-in-out;
+	transition:box-shadow .3s ease-in-out;
+}
+
+.features-boxed .box-inner:hover {
+	cursor: pointer;
+	box-shadow:0 5px 10px rgba(0,0,0,.15);
+
+}
+
+.features-boxed .box-inner .box-icon {
+	padding: 0 0 30px 0;
+}
+
+.features-boxed .box-inner .box-icon i {
+	font-size: 34px;
+	color: #448AFF;
+}
+
+.features-boxed .box-inner .box-info {
+	padding: 0 0 20px 0;
+}
+
+.features-boxed .box-inner .box-info h1 {
+	font-family: 'Roboto';
+	font-size: 24px;
+	font-weight: 400;
+	color: #343434;
+	margin: 0 0 20px 0;
+}
+
+.features-boxed .box-inner .box-info p {
+	font-family: 'Roboto';
+	font-size: 14px;
+	line-height: 1.6;
+	color: #A1A1A1;
+}
+
+.features-boxed .box-inner .box-arrow {
+	position: absolute;
+	right: 15%;
+	bottom: 12%;
+}
+
+.features-boxed .box-inner .box-arrow i {
+	font-size: 32px;
+	color: #448AFF;
+}
+
+
+
+/*--------------------------------------------------------------
+----------------- Features Section Stying Starts ---------------
+--------------------------------------------------------------*/
+
+
+.features {
+	background: #FFFFFF;
+	padding: 100px 0 50px 0;
+}
+
+.features-text {
+	padding: 0 0 0 0;
+	max-width: 500px;
+	overflow: hidden;
+}
+
+.features-text h2 {
+	font-family: 'Roboto';
+	font-size: 28px;
+	color: #222222;
+	font-weight: 300;
+	line-height: 1.2;
+	margin: 0 0 20px 0;
+}
+
+.features-text p {
+	font-family: 'Nunito';
+	font-size: 14px;
+	line-height: 1.4;
+	color: #A1A1A1;
+}
+
+/*  --------------------------------------------------
+------------- Pricing Section Styling ----------------
+-----------------------------------------------------*/
+
+
+.pricing {
+	padding: 50px 0 100px 0;
+}
+
+.pricing-content {
+	padding: 60px 0 0 0;
+	text-align: center;
+}
+
+.pricing h1 {
+	font-size: 28px;
+	font-weight: 400;
+	letter-spacing: -1px;
+	line-height: 1.2;
+}
+
+.pricing h4 {
+	font-size: 14px;
+	font-weight: 400;
+	color: #A1A1A1;
+	margin: 10px 0 30px 0;
+}
+
+.pricing p {
+	font-family: 'Nunito';
+	font-size: 14px;
+	font-weight: 400;
+	color: #444444;
+	line-height: 1.4;
+}
+
+.pricing .btn-buy {
+	padding: 40px 0 20px 0;
+}
+
+.pricing .btn-buy img {
+	display: inline;
+}
+
+.pricing .price-tag h2 {
+	font-family: 'Josefin Sans';
+	font-size: 24px;
+	font-weight: 400;
+	color: #A1A1A1;
+	margin: 0 0 20px 0;
+}
+
+
+
+/* ----- Pricing Tables Styling Starts ----- */
+
+.pricing-section {
+	width: 100%;
+	height: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background: #FFFFFF;
+}
+
+.pricing-intro {
+	padding-bottom: 30px;
+}
+
+.pricing-intro h1 {
+	font-size: 28px;
+	color: #111111;
+	font-weight: 600;
+	line-height: 1.4;
+}
+
+
+.pricing-intro p {
+	font-size: 15px;
+	color: #303030;
+	font-weight: 300;
+	line-height: 1.4;
+	letter-spacing: 1px;
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+
+.pricing-section .table-left, .pricing-section .table-right {
+	padding: 20px 20px 50px 20px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 0px 80px 0px rgba(0,0,0,.1);
+	border: transparent;
+	max-width: 400px;
+}
+
+.table-left .icon, .table-right .icon {
+	padding: 50px 50px 40px 50px;
+}
+
+.table-left .icon img, .table-right .icon img {
+	width: 60px;
+	height: 60px;
+	margin: 0 auto;
+}
+
+.table-left .pricing-details span, .table-right .pricing-details span {
+	display: inline-block;
+	font-family: 'Nunito';
+	font-size: 28px;
+	font-weight: 400;
+	color: #808080;
+	margin-bottom: 20px;
+}
+
+.table-left .pricing-details h2, .table-right .pricing-details h2 {
+	font-size: 18px;
+	font-weight: 600;
+	color: #505050;
+	margin-bottom: 30px;
+}
+
+.table-left .pricing-details p, .table-right .pricing-details p {
+	font-family: 'Nunito';
+	font-size: 14px;
+	font-weight: 300;
+	color: #505050;
+	letter-spacing: 1px;
+	line-height: 1.4;
+}
+
+.table-left .pricing-details ul, .table-right .pricing-details ul {
+	margin-top: 30px;
+	margin-bottom: 50px;
+	padding: 0;
+}
+
+
+.table-left .pricing-details li, .table-right .pricing-details li {
+	font-family: 'Nunito';
+	font-size: 14px;
+	font-weight: 400;
+	color: #505050;
+	line-height: 1.4;
+	margin-bottom: 10px;
+}
+
+.pricing-section .table-left:hover, .pricing-section .table-right:hover {
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.pricing-section .table-left, .pricing-section .table-right {
+	margin-top: 20px;
+}
+
+.pricing-section .table-center {
+	margin-top: 0;
+}
+
+
+
+/*----------------------------------------------------------------
+-------------------- Pricing V2 Styling Starts -------------------
+----------------------------------------------------------------*/
+
+
+.pricing-v2 {
+	padding: 50px 0 50px 0;
+	background: #F8F8F8;
+}
+
+.pricing-v2 .intro {
+	padding: 50px 0 50px 0;
+}
+
+.pricing-v2 .intro h4 {
+	font-family: 'Nunito';
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1.2;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.pricing-v2 .intro h1 {
+	font-family: 'Roboto';
+	font-size: 28px;
+	font-weight: 300;
+	line-height: 1.2;
+	margin-bottom: 20px;
+}
+
+.pricing-v2 .intro p {
+	font-family: 'Roboto';
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.2;
+	color: #848484;
+	margin-bottom: 20px;
+}
+
+.pricing-v2 .intro p:nth-child(4) {
+	font-size: 13px;
+}
+
+.pricing-v2 .intro a {
+	color: #41CD52;
+	text-decoration: none;
+}
+
+.pricing-v2 .table-left, .pricing-v2 .table-right {
+	padding: 50px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 0px 80px 0px rgba(0,0,0,.1);
+	border: transparent;
+	border-radius: 10px;
+	max-width: 400px;
+}
+
+.pricing-v2 .table-left .pricing-details ul, .pricing-v2 .table-right .pricing-details ul {
+	margin-bottom: 10px;
+}
+
+
+.pricing-v2 .btn-action span {
+	font-family: 'Nunito';
+	font-size: 12px;
+  font-weight: 700;
+  text-transform: capitalize;
+	letter-spacing: 1px;
+	color: #FFFFFF;
+	display: inline;
+}
+
+
+.pricing-v2 .btn-action:focus {
+	background: #41CD52;
+	outline: none;
+	border-color: #41CD52;
+}
+
+
+/*  --------------------------------------------------
+------------- Reviews Section Styling ----------------
+-----------------------------------------------------*/
+
+.review-section {
+	padding: 50px 0 50px 0;
+	text-align: center;
+	background: #FFFFFF;
+}
+
+
+.reviews {
+  width: 100%;
+	padding: 50px 0 50px 0;
+}
+
+
+.review-single img {
+  width:80px;
+	height:80px;
+}
+
+.review-text h3 {
+	font-family: 'Roboto';
+  font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 0;
+	line-height: 1.5;
+  color: #232323;
+}
+
+.review-text .ion {
+	display: inline-block;
+	margin-top: 20px;
+  font-size: 14px;
+  color: #ff8000;
+}
+
+.review-text p {
+  font-family: 'Roboto';
+  font-size: 16px;
+	font-weight: 300;
+  padding: 20px 10px 20px 10px;
+	line-height: 1.5;
+  color: #848484;
+}
+
+
+/*--------------- Review Sm Styling Starts ------------------ */
+
+.review-sm {
+	background: #FFFFFF;
+}
+
+.review-sm .reviews {
+  width: 100%;
+	padding: 0;
+}
+
+.review-sm p {
+  font-family: 'Josefin Sans';
+  font-size: 28px;
+	font-weight: 300;
+  padding: 20px 10px 20px 10px;
+	line-height: 1.5;
+  color: #848484;
+}
+
+.review-sm .review-text h3 {
+	font-family: 'Josefin Sans';
+  font-size: 21px;
+	font-weight: 600;
+	letter-spacing: 0;
+	line-height: 1.5;
+  color: #444444;
+}
+
+
+
+/* ----- Hero Section Styling Starts ----- */
+
+.cta {
+	height: 100%;
+	background: #F2F2F2;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/bg.jpg) no-repeat center center;
+	background-size: cover;
+	padding: 0 0 0 0;
+}
+
+.download {
+	height: 100%;
+	background: #F2F2F2;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/bg.jpg) no-repeat center center;
+	background-size: cover;
+	padding: 0 0 0 0;
+}
+
+.dwnld-inner {
+	padding: 100px 0 100px 0;
+	overflow: hidden;
+}
+
+.dwnld-inner .app-info h1 {
+	font-family: 'Nunito';
+	font-size: 28px;
+	font-weight: 700;
+	color: #FFFFFF;
+	line-height: 1.2;
+	letter-spacing: -1px;
+	margin: 20px 0 20px 0;
+}
+
+.dwnld-inner .app-info h4 {
+	font-family: 'Nunito';
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: 400;
+	line-height: 1.5;
+	margin: 0 0 25px 0;
+}
+
+.app-info i {
+	margin-top: 15px;
+	display: inline-block;
+}
+
+.app-info span {
+  font-family: 'Nunito';
+  font-size: 12px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.app-info .ion {
+  font-size: 1em;
+  color: #ff8000;
+}
+
+.download-buttons {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.download-buttons img {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.main-2 .cta {
+	background: url(../images/pitch_bg.jpg) no-repeat center center;
+	padding: 0 0 100px 0;
+}
+
+.main-2 .cta-inner {
+	margin: 150px 0 0 0;
+	float: right;
+	text-align: center;
+}
+
+.main-2 .cta-inner h1 {
+	font-family: 'Nunito';
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.1;
+	letter-spacing: 0;
+	text-transform: uppercase;
+	margin: 0 0 10px 0;
+	color: #09102B;
+}
+
+.main-2 .cta-inner h2 {
+	font-family: 'Nunito';
+	font-size: 34px;
+	font-weight: 700;
+	line-height: 1.1;
+	margin: 20px 0 20px 0;
+	color: #09102B;
+}
+
+.main-2 .cta-inner h3 {
+	font-family: 'Nunito';
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.1;
+	margin: 20px 0 20px 0;
+	color: #09102B;
+}
+
+.main-2 .cta-inner span {
+	font-size: 24px;
+	padding: 0 8px 0 0;
+}
+
+.main-2 .cta-inner span:nth-child(n+1) {
+	color: #D5D5D5;
+}
+
+.main-2 .cta-inner span:nth-child(2n+1) {
+	color: #333333;
+}
+
+.main-2 .cta-inner span:nth-last-child(3n+1) {
+	color: #666666;
+}
+
+
+.main-2 .cta-inner p {
+	font-family: 'Nunito';
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.2;
+	letter-spacing: 0;
+	max-width: 360px;
+	color: #09102B;
+}
+
+.main-2 .cta-inner ul {
+	margin-top: 20px;
+	list-style-type: none;
+}
+
+.main-2 .cta-inner ul li {
+	font-family: 'Nunito';
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+
+
+/*-----------------------------------------------------------
+----------------- Pitch Section Stying Starts ---------------
+-----------------------------------------------------------*/
+
+
+.pitch-2 {
+	width: 100%;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../images/cta.jpg) no-repeat center center;
+	background-size: cover;
+	padding: 150px 0 150px 0;
+}
+
+.pitch-inner {
+	max-width: 500px;
+  float: right;
+}
+
+.pitch-inner h4 {
+	font-family: 'Nunito';
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.pitch-inner h1 {
+	font-family: 'Nunito';
+	font-size: 28px;
+	line-height: 1.2;
+	margin-top: 20px;
+	color: #FFFFFF;
+}
+
+.pitch-inner p {
+	font-family: 'Nunito';
+	font-size: 14px;
+	line-height: 1.5;
+	margin-top: 20px;
+	color: #FFFFFF;
+}
+
+
+
+/*--------------------------------------------------------------
+----------------- Subscribe Form  Stying Starts ----------------
+--------------------------------------------------------------*/
+
+
+.cta-2 {
+	background: #FFFFFF;
+	width: 100%;
+	padding: 100px 0 100px 0;
+}
+
+.cta-2-inner h1 {
+	font-family: 'Roboto';
+	font-size: 28px;
+	font-weight: 300;
+	line-height: 1.4;
+	color: #252525;
+	margin-bottom: 20px;
+}
+
+.cta-2-inner p {
+	font-family: 'Roboto';
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.4;
+	color: #222222;
+	margin-bottom: 10px;
+}
+
+
+
+.subform {
+	padding-top: 30px;
+}
+
+.formee {
+	position: relative;
+}
+
+.formee .mail {
+	position: relative;
+	background-color: #F9F9F9;
+  box-shadow: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  transition: all .3s;
+}
+
+.formee input {
+  color: #222222;
+  font-family: 'Nunito';
+  padding: 0;
+  font-size: 0.9em;
+	height: 40px;
+  border: 2px solid #F2F2F2;
+  border-radius: 5px 0 0 5px;
+  border-color: #F2F2F2;
+	background-color: #F3F3F3;
+  outline: none;
+  padding: 0 100px 0 20px;
+}
+
+.formee input:focus {
+	border: 2px solid #FFF;
+  border-color: #F2F2F2;
+}
+
+.formee .right {
+  height: 40px;
+  border: 2px solid #41CD52;
+  border-radius: 0 5px 5px 0;
+  margin: 0;
+  padding: 0 25px 0 25px;
+  background-color: #41CD52;
+  color: #FFFFFF;
+	box-shadow: 0 0 1px transparent;
+  outline: none;
+	-webkit-transition: 500ms;
+	-moz-transition: 500ms;
+	transition: 500ms;
+}
+
+.formee .right:focus {
+	border: 2px solid #41CD52;
+}
+
+#email-error {
+	position: absolute;
+	left: 10%;
+	top: 150%;
+	font-family: 'Nunito';
+	font-size: 14px;
+	color: #FF0000;
+}
+
+#response {
+	color: #333333;
+	font-family: 'Nunito';
+	margin-top: 30px;
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+.main-2 .cta-2 {
+	background: #F2F2F2;
+}
+
+.main-2 .formee input {
+	background-color: #FFFFFF;
+	border-color: #FFFFFF;
+}
+
+.main-2 .formee .right {
+	background-color: #41CD52;
+}
+
+/*------------ Footer Lg Styling ---------------*/
+
+.footer {
+	background: #FFFFFF;
+	padding: 50px 0 50px 0;
+}
+
+.footer .ft-left .footer-img {
+	padding: 0 0 10px 0;
+}
+
+.footer .ft-left p {
+	font-family: 'Nunito';
+	font-size: 14px;
+	color: #848484;
+	line-height: 1.5;
+	letter-spacing: 0;
+	margin-top: 15px;
+}
+
+
+.footer .footer-social ul {
+	list-style-type: none;
+	margin-top: 10px;
+}
+
+.footer .footer-social ul li {
+	display: inline;
+	margin-right: 5px !important;
+	background: #FFFFFF;
+}
+
+.footer .footer-social li a i {
+	display: inline-block;
+  color: #242424;
+  font-size: 18px;
+	margin-right: 5px !important;
+  font-weight: normal;
+}
+
+.ft-right {
+	padding: 25px 0 0 0;
+}
+
+.ft-right ul {
+	list-style-type: none;
+	-webkit-columns: 2;
+	columns: 2;
+	padding: 0;
+}
+
+.ft-right ul li {
+	font-family: 'Nunito';
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 2.5;
+}
+
+.ft-right ul li a {
+	color: #454545;
+	text-decoration: none;
+}
+
+.ft-right ul li a:hover {
+	color: #41CD52
+}
+
+.footer .ft-right p {
+	font-family: 'Roboto';
+	font-size: 12px;
+	color: #848484;
+	line-height: 1.5;
+	letter-spacing: 0;
+	margin-top: 10px;
+}
+
+/* -------------------------------------------------------
+----------- Bact-to-Top Styling Starts Here --------------
+---------------------------------------------------------*/
+
+
+.back-to-top {
+	background: rgba(51, 51, 204, 0.9);
+	margin: 0;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	z-index: 90;
+	display: none;
+	text-decoration: none;
+	color: #0E1729;
+	box-shadow:0 5px 10px rgba(0, 0, 0, .3);
+}
+
+.back-to-top i {
+	position: relative;
+	left: 14px;
+	top: 8px;
+	font-size: 28px;
+	color: #FFFFFF;
+	-webkit-transition: 200ms;
+	-moz-transition: 200ms;
+	-o-transition: 200ms;
+	transition: 200ms;
+}
+
+.back-to-top:hover {
+    background: rgba(51, 51, 204, 0.9);
+    color: #FFFFFF;
+}
+
+.back-to-top:hover i {
+	top: 6px;
+}
+
+.back-to-top:focus {
+    color: #FFFFFF;
+}
+
+
+/*-----------------------------------------------------
+-------------------------------------------------------
+------------------- All Media Queries------------------
+-------------------------------------------------------
+-----------------------------------------------------*/
+
+@media only screen and (min-width: 767px) {
+
+  .hero {
+  	padding: 100px 0 50px 0;
+  }
+
+  .hero .intro {
+    padding: 100px 0 75px 0;
+  }
+
+
+	.hero .intro h1 {
+		font-size: 58px;
+	}
+
+	.hero .intro h1 span {
+		font-size: 54px;
+	}
+
+	.hero .intro p {
+		font-size: 16px;
+	}
+
+	.hero-2 {
+		padding: 150px 0 50px 0;
+	}
+
+	.hero-2 .intro {
+		padding: 125px 0 0 0;
+	}
+
+
+	.hero-2 .intro h1 {
+		font-size: 48px;
+	}
+
+	.hero-2 .intro p {
+		font-size: 14px;
+	}
+
+	.hero-2 img {
+		margin-top: 0;
+	}
+
+
+	.points-intro h1 {
+		font-size: 34px;
+	}
+
+	.features {
+		padding: 100px 0 100px 0;
+	}
+
+	.flex-split {
+		-webkit-flex-direction: row;
+		flex-direction: row;
+	}
+
+	.flex-split .f-left h2 {
+		font-size: 34px;
+	}
+
+	.flex-split .f-left {
+		padding: 80px 100px;
+	}
+
+	.flex-split .f-right {
+			flex: 1 0 50%;
+	}
+
+	.features-text h2 {
+	font-size: 34px;
+	}
+
+	.features-text p {
+		font-size: 16px;
+	}
+
+	.cta-2-inner h1 {
+		font-size: 34px;
+	}
+
+	.main-2 .cta-inner {
+		margin: 150px 0 0 0;
+		float: right;
+		text-align: justify;
+
+	}
+
+
+	.dwnld-inner .app-info h1 {
+		font-size: 34px;
+		margin: 20px 0 20px 0;
+	}
+
+	.dwnld-inner .app-info h4 {
+		font-size: 16px;
+	}
+
+	.pricing-v2 {
+		padding: 100px 0 100px 0;
+	}
+
+	.review-section {
+		padding: 100px 0 100px 0;
+	}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+  .hero {
+  	padding: 150px 0 50px 0;
+  }
+
+  .hero .intro {
+    padding: 50px 0 50px 0;
+  }
+
+  .flex-split .f-left {
+    padding: 25px 50px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+	.hero-2 .intro {
+		padding: 50px 0 0 0;
+	}
+
+	.hero-2 .intro h1 {
+		font-size: 42px;
+		font-weight: 600;
+		line-height: 1;
+	}
+
+	.hero-2 .intro p {
+		max-width: 300px;
+	}
+}
+
+
+@media only screen and (max-width: 766px) {
+
+	.flex-split .f-right {
+		flex: 1 0 50%;
+		height: 360px;
+	}
+
+	.hero-split .h-right {
+		flex: 1 0 50%;
+		height: 360px;
+	}
+
+}
+
+@media only screen and (max-width: 420px) {
+	.hero .intro h1 {
+		font-size: 36px;
+	}
+
+	.hero .intro h1 span {
+		font-size: 36px;
+	}
+
+	.hero .intro p {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+
+	.features-text {
+		padding: 100px 0 0 0;
+	}
+
+	.main-2 .cta-inner {
+		margin: 150px 0 0 0;
+		float: none;
+		text-align: justify;
+	}
+
+
+}
+
+
+@media screen and (max-width: 399px) {
+
+	.cta-sub {
+		text-align: center;
+	}
+
+	.subscribe-form {
+		text-align: center;
+	}
+
+ .formee input {
+	 text-align: center;
+   padding: 0 0 0 0;
+   border-radius: 5px 0 0 5px;
+ }
+
+ .formee .right {
+   padding: 0 5px 0 5px;
+   border-radius: 0 5px 5px 0;
+	 margin-top: 15px;
+ }
+
+ .form .sub-form .subscribe-form {
+ 	text-align: left;
+ }
+
+
+  .form .sub-form .formee input {
+ 	 text-align: center;
+    padding: 0 0 0 0;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .form .sub-form .formee .right {
+    padding: 0 5px 0 5px;
+    border-radius: 0 5px 5px 0;
+ 	 margin-top: 15px;
+  }
+
+ .back-to-top {
+	right: 10px;
+}
+}
+
+
+@media screen and (max-width: 399px) {
+
+	.subscribe-form {
+		text-align: center;
+	}
+
+ .subscribe-form .mail {
+	 text-align: center;
+   padding: 0 0 0 0;
+   border-radius: 5px 0 0 5px;
+ }
+
+ .subscribe-form .submit-button {
+   padding: 0 5px 0 5px;
+   border-radius: 0 5px 5px 0;
+	 margin-top: 15px;
+ }
+
+ }
