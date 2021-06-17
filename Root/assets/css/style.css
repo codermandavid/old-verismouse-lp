@@ -75,7 +75,7 @@ table {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Nunito';
-  font-size: 16px;
+	font-size: 16px;
 }
 
 p {
@@ -83,12 +83,42 @@ p {
 	font-size: 14px;
 }
 
+::-webkit-input-placeholder {
+	font-family: 'Nunito';
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: capitalize;
+	letter-spacing: 0.5px;
+	padding-left: 10px;
+	vertical-align: middle;
+}
+
+:-ms-input-placeholder {
+	font-family: 'Nunito';
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: capitalize;
+	letter-spacing: 0.5px;
+	padding-left: 10px;
+	vertical-align: middle;
+}
+
+::placeholder {
+	font-family: 'Nunito';
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: capitalize;
+	letter-spacing: 0.5px;
+	padding-left: 10px;
+	vertical-align: middle;
+}
+
 /*----- Helper Classes -----*/
 
 html * {
 	text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 body {
