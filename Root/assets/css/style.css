@@ -83,36 +83,6 @@ p {
 	font-size: 14px;
 }
 
-::-webkit-input-placeholder {
-	font-family: 'Nunito';
-	font-size: 14px;
-	font-weight: 700;
-	text-transform: capitalize;
-	letter-spacing: 0.5px;
-	padding-left: 10px;
-	vertical-align: middle;
-}
-
-:-ms-input-placeholder {
-	font-family: 'Nunito';
-	font-size: 14px;
-	font-weight: 700;
-	text-transform: capitalize;
-	letter-spacing: 0.5px;
-	padding-left: 10px;
-	vertical-align: middle;
-}
-
-::placeholder {
-	font-family: 'Nunito';
-	font-size: 14px;
-	font-weight: 700;
-	text-transform: capitalize;
-	letter-spacing: 0.5px;
-	padding-left: 10px;
-	vertical-align: middle;
-}
-
 /*----- Helper Classes -----*/
 
 html * {
@@ -186,6 +156,10 @@ body {
 	left: 2%;
 	top: 2%;
 	z-index: 11;
+}
+
+.header {
+	font-size: 28px;
 }
 
 /* ------ Navbar Styling Starts ----- */
@@ -791,6 +765,7 @@ body {
 	line-height: 1.4;
 	margin-top: 15px;
 }
+
 
 
 /*-----------------------------------------------------------------
